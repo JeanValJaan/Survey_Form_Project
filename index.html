@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey_Form_Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">NET<span>FLIX</span></h1>
+      <h3 id="description">
+        Thank you for signing up at Netflix. Tell us more about yourself
+      </h3>
+      <fieldset class="form">
+      <form
+        action="result.html"
+        method="get"
+        name="form"
+        target="_blank"
+        class="survey-form"
+      >
+        <div class="survey-form__input-box">
+          <label for="name" id="name_label">Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="survey-form__input-box--content"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="survey-form__input-box">
+          <label for="age" id="age_label">Age</label>
+          <br />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            class="survey-form__input-box--content"
+            placeholder="Age"
+            required
+          />
+        </div>
+        <div class="survey-form__input-box">
+          <label for="email" id="email_label">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="survey-form__input-box--content"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="survey-form__input-box" id="dropdown">
+          <label for="dropdown" id="dropdown_label">Content type</label>
+          <br />
+          <select
+            name="content"
+            id="dropdown"
+            class="survey-form__input-box--content"
+          >
+            <option value="Movie">Movie</option>
+            <option value="Series" selected>Series</option>
+          </select>
+        </div>
+        <div class="survey-form__input-box">
+          <label id="checkbox">Movie type</label>
+          <br />
+          <label for="first_check">
+            <input
+              type="checkbox"
+              name="movie1"
+              id="firstcheck"
+              value="Comedy"
+            />Comedy
+          </label>
+          <br>
+          <label for="second_check">
+            <input
+              type="checkbox"
+              name="movie2"
+              id="secondcheck"
+              value="Action"
+            />Action
+          </label>
+          <br>
+          <label for="third_check">
+            <input
+              type="checkbox"
+              name="movie3"
+              id="thirdcheck"
+              value="Romance"
+              checked
+            />Romance
+          </label>
+        </div>
+        <div class="survey-form__input-box">
+          <label id="radiobuton">Gender</label>
+          <br />
+          <label for="first_radio">
+            <input
+              type="radio"
+              name="gender"
+              id="first-radio"
+              value="female"
+              checked
+            />Female
+          </label>
+          <br>
+          <label for="second_radio">
+            <input
+              type="radio"
+              name="gender"
+              id="second-radio"
+              value="male"
+              checked
+            />Male
+          </label>
+          <br>
+          <label for="third_radio">
+            <input
+              type="radio"
+              name="gender"
+              id="third-radio"
+              value="other"
+              checked
+            />Other
+          </label>
+        </div>
+        <div class="survey-form__input-box">
+          <label for="feedback" id="feed-label">Feedback</label>
+          <br />
+          <textarea
+            name="message"
+            id="feedback"
+            cols="50"
+            rows="5"
+            placeholder="any comment"
+            style="resize: none"
+            class="textarea"
+          >
+          </textarea>
+        </div>
+        <input type="submit" value="Send" id="submit">
+      </form>
+    </fieldset>
+    </div>
+    <picture>
+      <source media="(min-width: ") srcset="Image1.jpg">
+    </picture>
+  </body>
+</html>
